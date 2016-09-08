@@ -35,7 +35,7 @@ public class ResverseString {
 	}
 	
 	/**
-	 * bit manipulation 
+	 * bit manipulation
 	 * @param s
 	 * @return
 	 */
