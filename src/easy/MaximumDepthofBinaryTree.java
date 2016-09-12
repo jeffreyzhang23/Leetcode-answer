@@ -13,20 +13,23 @@ class TreeNode {
 }
 
 public class MaximumDepthofBinaryTree {
-    static int maxDepth(TreeNode root) {
-        int counterLeft = 1, counterRight = 1;
-        TreeNode currentNode = null;
-        if(root.left == null || root.right == null) return 1;
-        currentNode = root;
-        while(currentNode.left != null) {
-            currentNode = currentNode.left;
-            counterLeft++;
+    public int maxDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
         }
-        while(currentNode.right != null) {
-            currentNode = currentNode.right;
-            counterRight++;
-        }
+        return theDepth(root);
+    }
 
-        return counterLeft > counterRight ? counterLeft : counterRight;
+    private int theDepth(TreeNode root) {
+        int leftDepth = 1;
+        int rightDepth = 1;
+
+        if (root.left != null) {
+            leftDepth = theDepth(root.left) + 1;
+        }
+        if (root.right != null) {
+            rightDepth = theDepth(root.right) + 1;
+        }
+        return Math.max(leftDepth, rightDepth);
     }
 }
