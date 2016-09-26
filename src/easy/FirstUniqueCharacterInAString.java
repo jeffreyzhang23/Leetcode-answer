@@ -1,10 +1,5 @@
 package easy;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-
 /**
  * Created by Jeffrey on 2016/9/19.
  */
