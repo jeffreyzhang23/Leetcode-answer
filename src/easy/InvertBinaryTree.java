@@ -1,6 +1,6 @@
 package easy;
 
-/**
+/**226. Invert Binary Tree
  * Created by Jeffrey on 2016/9/12.
  */
 public class InvertBinaryTree {
