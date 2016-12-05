@@ -1,9 +1,5 @@
 package easy;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-
 /**
  * 344. Reverse String
  * Write a function that takes a string as input and returns the string reversed.
