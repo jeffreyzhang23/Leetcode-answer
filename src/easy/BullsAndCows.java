@@ -27,6 +27,12 @@ package easy;
  * Created by Jeffrey on 2016/11/16.
  */
 public class BullsAndCows {
+    /**
+     *
+     * @param secret
+     * @param guess
+     * @return
+     */
     public static String getHint(String secret, String guess) {
         int bulls = 0;
         int cows = 0;
